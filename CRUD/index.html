@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css.map">
+</head>
+<body>
+    
+<div class="container py-5">
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="productName" placeholder="name@example.com">
+        <label for="productName">product Name</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="productPrice" placeholder="name@example.com">
+        <label for="productPrice">product Price</label>
+    </div>
+
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="productDes" placeholder="name@example.com">
+        <label for="productDes">product Des</label>
+    </div>
+
+
+    <div class='form-floating mb-3 list="Des" '>
+        <input type="text" class="form-control" id="productCat" placeholder="name@example.com">
+        <label for="productCat">product Cat</label>
+
+
+<datalist id="Des">
+    <option value="TV">
+        <option value="Labtop">
+            <option value="mobile">
+                <option value="screen">
+</datalist>
+
+    </div>
+
+
+    <div class="form-floating mb-3">
+        <input type="file" class="form-control" multiple id="productimg" placeholder="name@example.com">
+        <label for="productimg">product img</label>
+    </div>
+
+<button onclick="addProduct()" class="bg-danger p-3">Add product</button>
+
+<input type="text" oninput="Search()" class=" form-control w-50 h-50 m-auto " id="productSearch" placeholder="productSearch">
+
+
+</div>
+
+
+<img src="img/images (1).jpeg" alt="">
+
+<div class="container mt-5">
+<div class="row" id="demo">
+
+</div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
